@@ -36,7 +36,7 @@
   --image-radius: 8%;
   --width: 400px;
   --height: 300px;
-  --line-clamp: 10;
+  --line-clamp: 5;
 }
 
 .MuiDrawer-root>.MuiPaper-root {
