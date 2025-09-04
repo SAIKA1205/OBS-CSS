@@ -27,38 +27,22 @@
   --balloon-width: 800px;
   
   /* テキスト */
-  --font-size-name: 1.6rem;
-  --font-color-name: var(--font-color, rgb(245, 245, 245));
-  --font-color-name-shadow: var(--font-color-shadow, 0);
-  --font-size-dice: calc(var(--font-size, 1.6rem) + .1rem);
-  --font-color-dice: rgba(255, 255, 255, 0.7);
+  --font-size-name: 1.1rem;
+  --font-color-name: var(--red);
+  --font-color-name-shadow: 0;
+  --font-size-dice: 1.1rem;
+  --font-color-dice: var(--red);
   --font-color-dice-shadow: 0;
-  --font-color-fail: rgb(245, 0, 87);
-  --font-color-fail-shadow: 0;
-  --font-color-success: rgb(33, 150, 243);
-  --font-color-success-shadow: 0;
-  --font-size-main: calc(var(--font-size, 1.5rem) + .5rem);
-  --font-color-main: var(--font-color, rgb(245, 245, 245));
-  --font-color-main-shadow: var(--font-color-shadow, 0);
+  --font-size-main: 1.0rem;
+  --font-color-main: var(--blue);
+  --font-color-main-shadow: 0;
+  
   /* イメージ */
-  --image-background: var(--background-color, rgb(255, 255, 255));
-  --image-width: 120px;
-  --image-height: 120px;
-  --image-border-color: var(--border-color, rgb(0, 0, 0));
-  --image-border-width: var(--border-width, 6px);
-  --image-border-radius: 50%;
-  --image-margin: .5rem;
-  /* 非表示設定 'block' or 'none' */
-  --image-display: block;
-  --dice-display: block;
-  /* 非表示設定 'inline-flex' or 'none' */
-  --skip-display: inline-flex;
-  --close-display: inline-flex;
-  /* 非表示設定 'flex', 'block' or 'none' */
-  --title-display: flex;
-  --main-title-display: block;
-  --sub-title-display: block;
-  --message-display: block;
+  --image-display: none;
+ /* スキップボタンを消す */
+  --skip-display: none;
+  /* 閉じるボタンを消す */
+  --close-display: none;
 }
 
 /* ココフォリア デフォルトの表示 */
@@ -187,3 +171,18 @@ div[tabindex="0"]>.MuiPaper-root {
 [aria-label="閉じる"] {
   display: var(--close-display);
 }
+
+/* 2025-09-05 SAIKA 追記 */
+
+/* 高さ調整 */
+.css-6tsndk {
+height: 30px;
+}
+
+/* 影を消す */
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+box-shadow: none !important;
+background-color: rgb(255,255,255);
+}
+
+/* 2025-09-05 SAIKA 追記 終了 */
