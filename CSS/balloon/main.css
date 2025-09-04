@@ -18,7 +18,7 @@
 :root {
   /* ボックス */
   --balloon-background-color: var(--white);
-  --balloon-background-padding: 2px 2px 2px 2px;
+  --balloon-background-padding: 10px 25px;
   --balloon-border-color: var(--blue);
 /*   --balloon-border-image: var(--border-image, url()); */
   --balloon-border-width: 3px;
@@ -46,16 +46,14 @@
 }
 
 /* ココフォリア デフォルトの表示 */
-/*
-:root {
+/* :root {
   --image-background: transparent;
   --image-width: 240px;
   --image-height: auto;
   --image-border-width: 0;
   --image-border-radius: 0;
   --image-margin: 0;
-}
-*/
+} */
 
 /* タイトルの方 */
 .MuiTypography-subtitle2,
@@ -65,7 +63,6 @@
 
 .MuiToolbar-gutters {
   display: var(--title-display);
-  padding: 12px 24px;
 }
 
 /* ログの方 */
@@ -75,8 +72,6 @@
 
 .MuiToolbar-root+div {
   display: var(--message-display);
-  padding: 0px 24px 16px;
-  height: 160px;
 }
 
 /* アイコン */
@@ -174,12 +169,16 @@ div[tabindex="0"]>.MuiPaper-root {
 
 /* 2025-09-05 SAIKA 追記 */
 
-/* 高さ調整 */
+/* 行間調整 */
 .css-6tsndk {
-height: 30px;
+padding: 0px !important;
+height: 50px!important; 
+}
+.jlKRNh {
+padding: 0px !important;
 }
 
-/* 影を消す */
+/* 影を消す・高さを固定 */
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
 box-shadow: none !important;
 background-color: rgb(255,255,255);
