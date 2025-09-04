@@ -46,14 +46,16 @@
 }
 
 /* ココフォリア デフォルトの表示 */
-/* :root {
+/*
+:root {
   --image-background: transparent;
   --image-width: 240px;
   --image-height: auto;
   --image-border-width: 0;
   --image-border-radius: 0;
   --image-margin: 0;
-} */
+}
+*/
 
 /* タイトルの方 */
 .MuiTypography-subtitle2,
@@ -63,6 +65,7 @@
 
 .MuiToolbar-gutters {
   display: var(--title-display);
+  padding: 12px 24px;
 }
 
 /* ログの方 */
@@ -71,9 +74,9 @@
 }
 
 .MuiToolbar-root+div {
-  display: var(--message-display);
-  padding: 0px 24px 16px;
-  height: 160px;
+  display: var(--message-display);
+  padding: 0px 24px 16px;
+  height: 160px;
 }
 
 /* アイコン */
