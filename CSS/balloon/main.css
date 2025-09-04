@@ -1,3 +1,5 @@
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/chat/option_animation_r2l.css");
+
 @import url("https://saika1205.github.io/OBS-CSS/CSS/asset/-obs.css");
 @import url("https://saika1205.github.io/OBS-CSS/CSS/asset/-scrollbar.css");
 @import url("https://saika1205.github.io/OBS-CSS/CSS/asset/board.css");
@@ -180,6 +182,12 @@ padding: 0px !important;
 }
 .jlKRNh {
 padding: 0px !important;
+}
+
+/* 高さ調整 */
+.MuiTypography-body1{
+height: 50px !important;  
+overflow: hidden;
 }
 
 /* 影を消す */
