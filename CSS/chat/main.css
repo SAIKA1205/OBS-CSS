@@ -36,21 +36,6 @@
   --image-radius: 8%;
   --width: 400px;
   --line-clamp: 10;
-
----------
-
-  --border-width: 3px;
-  --border-radius: 8px;
-  --border-shadow: 0;
-  --font-color: rgb(77, 51, 255);
-
-  --font-size: 0.9rem;
-  --font-shadow: 0;
-  --image-radius: 8%;
-  --width: 400px;
-  --line-clamp: 10;
-}
-
 }
 
 .MuiDrawer-root>.MuiPaper-root {
