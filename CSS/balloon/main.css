@@ -15,7 +15,7 @@
 @import url("https://saika1205.github.io/OBS-CSS/CSS/asset/timer.css");
 @import url("https://saika1205.github.io/OBS-CSS/CSS/asset/volume.css");
 
-:root {
+.css-175dgcc {
   /* ボックス */
   --balloon-background-color: var(--white);
   --balloon-background-padding: 2px 2px 2px 2px;
@@ -38,25 +38,14 @@
   --font-color-main-shadow: 0;
 
   /* イメージ */
-  --image-background: var(--background-color, rgb(255, 255, 255));
-  --image-width: 120px;
-  --image-height: 120px;
-  --image-border-color: var(--border-color, rgb(0, 0, 0));
-  --image-border-width: var(--border-width, 6px);
-  --image-border-radius: 50%;
-  --image-margin: .5rem;
+  --image-display: none;
+  --dice-display: none;
 
-  /* 非表示設定 'block' or 'none' */
-  --image-display: block;
-  --dice-display: block;
-  /* 非表示設定 'inline-flex' or 'none' */
-  --skip-display: inline-flex;
-  --close-display: inline-flex;
-  /* 非表示設定 'flex', 'block' or 'none' */
-  --title-display: flex;
-  --main-title-display: block;
-  --sub-title-display: block;
-  --message-display: block;
+　/* スキップボタンを消す */
+　--skip-display: none;
+
+  /* 閉じるボタンを消す */
+  --close-display: none;
 }
 
 /* ココフォリア デフォルトの表示 */
