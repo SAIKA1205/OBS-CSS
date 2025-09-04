@@ -23,23 +23,19 @@
 **************************/
 
 :root {
-  --background-color: rgb(255, 255, 255);
+  --background-color: var(--white);
   --background-padding: 10px 10px 10px 10px;
-  --border-color: rgb(77, 51, 255);
+  --border-color: var(--blue);
   --border-width: 3px;
   --border-radius: 8px;
   --border-shadow: 0;
-  --font-color: rgb(77, 51, 255);
-/*   --font-color-shadow: 0; */
+  --font-color: var(--blue);
+  --font-color-shadow: 0;
   --font-size: 0.9rem;
   --font-shadow: 0;
   --image-radius: 8%;
   --width: 400px;
   --line-clamp: 10;
-  --font-color-fail: rgb(245, 0, 87);
-  --font-color-fail-shadow: 0;
-  --font-color-success: rgb(33, 150, 243);
-  --font-color-success-shadow: 0;
 }
 
 .MuiDrawer-root>.MuiPaper-root {
@@ -142,3 +138,20 @@ p.MuiTypography-root {
   color: var(--font-color);
   text-shadow: var(--font-color-shadow);
 }
+
+/* 2025-09-05 SAIKA 追記 */
+.MuiList-root>div:nth-child(1)>div>div:nth-last-child(-n+11)>div {
+    display: flex !important;
+}
+.MuiList-root>div:nth-child(1)>div>div:nth-last-child(-n+1)>div {
+    display: none !important;
+}
+
+.MuiToolbar-root.MuiToolbar-dense.css-mjywep {
+    display: none;
+}
+.MuiTypography-root.MuiTypography-caption.css-1v2gfp5 {
+    display: none;
+}
+
+/* 2025-09-05 SAIKA 追記 終了 */
