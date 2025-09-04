@@ -76,7 +76,7 @@
 .MuiToolbar-root+div {
   display: var(--message-display);
   padding: 0px 24px 16px;
-  height: 160px　!important;
+  height: 160px;
 }
 
 /* アイコン */
