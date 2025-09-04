@@ -177,7 +177,7 @@ padding: 0px !important;
 padding: 0px !important;
 }
 
-/* 影を消す・高さを固定 */
+/* 影を消す */
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
 box-shadow: none !important;
 background-color: rgb(255,255,255);
