@@ -20,7 +20,7 @@
 :root {
   /* ボックス */
   --balloon-background-color: var(--white);
-  --balloon-background-padding: 10px 25px;
+  --balloon-background-padding: 20px 30px;
   --balloon-border-color: var(--blue);
 /*   --balloon-border-image: var(--border-image, url()); */
   --balloon-border-width: 3px;
