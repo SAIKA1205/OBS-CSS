@@ -1,43 +1,42 @@
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-scrollbar.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/modal.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/monitoring.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/newDice.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/timer.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/-obs.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/-scrollbar.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/board.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/boardBackground.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/chat.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/color.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/cutIn.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/edit.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/header.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/modal.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/monitoring.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/newDice.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/scaling.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/status.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/timer.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/volume.css");
 
 :root {
   /* ボックス */
-  --balloon-background-color: var(--background-color, rgb(0, 0, 0));
-  --balloon-background-padding: var(--background-padding, 8px 8px 8px 8px);
-  --balloon-border-color: var(--border-color, rgb(0, 0, 0, 0));
-  --balloon-border-image: var(--border-image, url());
-  --balloon-border-width: var(--border-width, 2px);
-  --balloon-border-radius: var(--border-radius, 10px);
-  --balloon-border-shadow: var(--border-shadow, 0);
-  --balloon-width: 960px;
+  --balloon-background-color: var(--white);
+  --balloon-background-padding: 2px 2px 2px 2px;
+  --balloon-border-color: var(--blue);
+  --balloon-border-width: 3px;
+  --balloon-border-radius: 10px;
+  --balloon-border-shadow: 0;
+  --balloon-width: 800px;
+  --balloon-height: 160px; 
+
   /* テキスト */
-  --font-size-name: 1.6rem;
-  --font-color-name: var(--font-color, rgb(245, 245, 245));
-  --font-color-name-shadow: var(--font-color-shadow, 0);
-  --font-size-dice: calc(var(--font-size, 1.6rem) + .1rem);
-  --font-color-dice: rgba(255, 255, 255, 0.7);
+  --font-size-name: 1.1rem;
+  --font-color-name: var(--red);
+  --font-color-name-shadow: 0;
+  --font-size-dice: 1.1rem;
+  --font-color-dice: var(--blue);
   --font-color-dice-shadow: 0;
-  --font-color-fail: rgb(245, 0, 87);
-  --font-color-fail-shadow: 0;
-  --font-color-success: rgb(33, 150, 243);
-  --font-color-success-shadow: 0;
-  --font-size-main: calc(var(--font-size, 1.5rem) + .5rem);
-  --font-color-main: var(--font-color, rgb(245, 245, 245));
-  --font-color-main-shadow: var(--font-color-shadow, 0);
+  --font-size-main: 1.0rem;
+  --font-color-main: var(--blue);
+  --font-color-main-shadow: 0;
+
   /* イメージ */
   --image-background: var(--background-color, rgb(255, 255, 255));
   --image-width: 120px;
@@ -46,6 +45,7 @@
   --image-border-width: var(--border-width, 6px);
   --image-border-radius: 50%;
   --image-margin: .5rem;
+
   /* 非表示設定 'block' or 'none' */
   --image-display: block;
   --dice-display: block;
