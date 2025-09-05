@@ -141,7 +141,7 @@ p.MuiTypography-root {
 }
 
 /* 2025-09-05 SAIKA 追記 */
-.MuiList-root>div:nth-child(1)>div>div:nth-last-child(-n+8)>div {
+.MuiList-root>div:nth-child(1)>div>div:nth-last-child(-n+11)>div {
     display: flex !important;
 }
 .MuiList-root>div:nth-child(1)>div>div:nth-last-child(-n+1)>div {
