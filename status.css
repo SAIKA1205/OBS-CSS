@@ -1,0 +1,27 @@
+@import url("https://saika1205.github.io/OBS-CSS/color.css");
+
+div[tabindex="0"][style^="right:"]>div>div:nth-child(n+1) {
+  display: flex;    
+}
+
+:root {
+    --avatar-height: 50px;
+    --avatar-width: 50px;
+
+    --avatar-border-color: var(--red);
+
+    --avatar-margin: 0px;
+
+    --badge-height: 25px;
+    --badge-width: 25px;
+    --badge-background: var(--white);
+    --badge-font-size: 0.8rem;
+    
+    --status-column: 2;
+    --status-height: 24px;
+    --status-width: 150px;
+    --status-background: var(--white);
+    --status-font-size: 1.0rem;
+    --status-font-secondary-color: var(--red);
+    --status-font-border-color: none;
+}
