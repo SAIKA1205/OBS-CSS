@@ -1,0 +1,199 @@
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/chat/option_animation_r2l.css");
+
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/-obs.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/-scrollbar.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/board.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/boardBackground.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/chat.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/color.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/cutIn.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/edit.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/header.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/modal.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/monitoring.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/newDice.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/scaling.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/status.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/timer.css");
+@import url("https://saika1205.github.io/OBS-CSS/CSS/asset/volume.css");
+
+:root {
+  /* ボックス */
+  --balloon-background-color: var(--white);
+  --balloon-background-padding: 20px 30px;
+  --balloon-border-color: var(--blue);
+/*   --balloon-border-image: var(--border-image, url()); */
+  --balloon-border-width: 3px;
+  --balloon-border-radius: 10px;
+  --balloon-border-shadow: 0;
+  --balloon-width: 800px;
+  
+  /* テキスト */
+  --font-size-name: 1.1rem;
+  --font-color-name: var(--red);
+  --font-color-name-shadow: 0;
+  --font-size-dice: 1.1rem;
+  --font-color-dice: var(--red);
+  --font-color-dice-shadow: 0;
+  --font-size-main: 1.0rem;
+  --font-color-main: var(--blue);
+  --font-color-main-shadow: 0;
+  
+  /* イメージ */
+  --image-display: none;
+ /* スキップボタンを消す */
+  --skip-display: none;
+  /* 閉じるボタンを消す */
+  --close-display: none;
+}
+
+/* ココフォリア デフォルトの表示 */
+/*
+:root {
+  --image-background: transparent;
+  --image-width: 240px;
+  --image-height: auto;
+  --image-border-width: 0;
+  --image-border-radius: 0;
+  --image-margin: 0;
+}
+*/
+
+/* タイトルの方 */
+.MuiTypography-subtitle2,
+.MuiTypography-body2 {
+  font-size: 1.6rem;
+}
+
+.MuiToolbar-gutters {
+  display: var(--title-display);
+  padding: 12px 24px;
+}
+
+/* ログの方 */
+.MuiTypography-body1 {
+  font-size: 2rem;
+}
+
+.MuiToolbar-root+div {
+  display: var(--message-display);
+  padding: 0px 24px 16px;
+  height: 160px;
+}
+
+/* アイコン */
+.MuiPaper-root>img {
+  display: var(--image-display);
+  width: var(--image-width);
+  height: var(--image-height);
+  margin-bottom: var(--image-margin);
+  background: var(--image-background);
+  border: solid var(--image-border-width) var(--image-border-color);
+  border-radius: var(--image-border-radius);
+  object-fit: cover;
+  object-position: top;
+}
+
+.MuiPaper-root>img[src=""] {
+  display: none;
+}
+
+/* カスタム用 */
+div[tabindex="0"]>.MuiPaper-root {
+  background-color: transparent;
+  max-width: var(--balloon-width);
+  left: 5px;
+  right: 5px;
+  bottom: 20px;
+  border-radius: var(--balloon-border-radius);
+}
+
+.MuiPaper-root>.MuiPaper-root {
+  padding: var(--balloon-background-padding);
+  background: var(--balloon-background-color);
+  border: solid var(--balloon-border-width) var(--balloon-border-color);
+  border-radius: var(--balloon-border-radius);
+  border-image: var(--balloon-border-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: var(--balloon-border-shadow);
+}
+
+/* 名前 */
+.MuiTypography-subtitle2 {
+  display: var(--main-title-display);
+  font-size: var(--font-size-name);
+  color: var(--font-color-name);
+  text-shadow: var(--font-color-name-shadow);
+}
+
+/* ダイス結果 */
+.MuiTypography-body2 {
+  display: var(--sub-title-display);
+  font-size: var(--font-size-dice);
+  color: var(--font-color-dice);
+  text-shadow: var(--font-color-dice-shadow);
+}
+
+/* ダイス結果（成功） */
+.css-1l6qhgm {
+  color: var(--font-color-success);
+  text-shadow: var(--font-color-success-shadow);
+}
+
+/* ダイス結果（失敗） */
+.css-1j13mke {
+  color: var(--font-color-fail);
+  text-shadow: var(--font-color-fail-shadow);
+}
+
+/* 本文 */
+.MuiTypography-body1 {
+  font-size: var(--font-size-main);
+  color: var(--font-color-main);
+  text-shadow: var(--font-color-main-shadow);
+}
+
+/* ダイス */
+.MuiPaper-root>.MuiPaper-root>div:nth-child(1) {
+  display: var(--dice-display);
+  margin-bottom: var(--image-margin);
+}
+
+/* スキップボタン */
+[aria-label="スキップ"] {
+  display: var(--skip-display);
+}
+
+/* 閉じるボタン */
+[aria-label="閉じる"] {
+  display: var(--close-display);
+}
+
+/* 2025-09-05 SAIKA 追記 */
+
+/* 行間調整 */
+.css-6tsndk {
+padding: 0px !important;
+}
+.jlKRNh {
+padding: 0px !important;
+}
+
+/* 高さ調整 */
+.MuiTypography-body1{
+height: 50px !important;  
+overflow: hidden;
+}
+
+/* 影を消す */
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+box-shadow: none !important;
+background-color: rgb(255,255,255);
+}
+
+/* 2025-09-05 SAIKA 追記 終了 */
