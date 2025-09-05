@@ -19,7 +19,7 @@
   /* ボックス */
   --balloon-background-color: var(--white);
   --balloon-background-padding: var(--background-padding, 10px 10px 10px 10px);
-  --balloon-border-color: var(--blue;
+  --balloon-border-color: var(--blue);
   --balloon-border-image: var(--border-image, url());
   --balloon-border-width: var(--border-width, 3px);
   --balloon-border-radius: var(--border-radius, 10px);
