@@ -1,7 +1,7 @@
 :root {
-    --white: rgb(255,255,255)
-    --blue: rgb(77, 51, 255)
-    --red: rgb(255, 53, 53)
+    --white: rgb(255,255,255);
+    --blue: rgb(77, 51, 255);
+    --red: rgb(255, 53, 53);
 
     --font-color-fail: rgb(245, 0, 87);
     --font-color-fail-shadow: 0;
@@ -9,3 +9,4 @@
     --font-color-success-shadow: 0;
 
 }
+
