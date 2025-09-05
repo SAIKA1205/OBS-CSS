@@ -1,3 +1,0 @@
-[style^='transform: translate'] > [style^='transform: scale'] > div:nth-child(1) {
-  display: none;
-}
