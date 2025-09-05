@@ -1,19 +1,4 @@
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-scrollbar.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
 @import url("https://saika1205.github.io/OBS-CSS/color.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/modal.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/monitoring.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/newDice.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/timer.css");
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");
 
 :root {
   /* ボックス */
@@ -36,6 +21,7 @@
   --font-size-main: 1.0rem;
   --font-color-main: var(--blue);
   --font-color-main-shadow: var(--font-color-shadow, 0);
+
   /* イメージ */
   --image-display: none;
   --dice-display: none;
@@ -147,12 +133,12 @@ div[tabindex="0"]>.MuiPaper-root {
 
 /* スキップボタン */
 [aria-label="スキップ"] {
-  display: var(--skip-display);
+  display: none;
 }
 
 /* 閉じるボタン */
 [aria-label="閉じる"] {
-  display: var(--close-display);
+  display: none;
 }
 
 /* 行間調整 */
