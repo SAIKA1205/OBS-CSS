@@ -24,53 +24,29 @@
   --balloon-border-width: var(--border-width, 3px);
   --balloon-border-radius: var(--border-radius, 10px);
   --balloon-border-shadow: var(--border-shadow, 0);
-  --balloon-width: 960px;
+  --balloon-width: 800px;
+  
   /* テキスト */
-  --font-size-name: 1.6rem;
-  --font-color-name: var(--font-color, rgb(245, 245, 245));
+  --font-size-name: 1.1rem;
+  --font-color-name: var(--red);
   --font-color-name-shadow: var(--font-color-shadow, 0);
-  --font-size-dice: calc(var(--font-size, 1.6rem) + .1rem);
-  --font-color-dice: rgba(255, 255, 255, 0.7);
+  --font-size-dice: 1.1rem;
+  --font-color-dice: var(--red);
   --font-color-dice-shadow: 0;
-  --font-color-fail: rgb(245, 0, 87);
-  --font-color-fail-shadow: 0;
-  --font-color-success: rgb(33, 150, 243);
-  --font-color-success-shadow: 0;
-  --font-size-main: calc(var(--font-size, 1.5rem) + .5rem);
-  --font-color-main: var(--font-color, rgb(245, 245, 245));
+  --font-size-main: 1.0rem;
+  --font-color-main: var(--blue);
   --font-color-main-shadow: var(--font-color-shadow, 0);
   /* イメージ */
-  --image-background: var(--background-color, rgb(255, 255, 255));
-  --image-width: 120px;
-  --image-height: 120px;
-  --image-border-color: var(--border-color, rgb(0, 0, 0));
-  --image-border-width: var(--border-width, 6px);
-  --image-border-radius: 50%;
-  --image-margin: .5rem;
-  /* 非表示設定 'block' or 'none' */
-  --image-display: block;
-  --dice-display: block;
-  /* 非表示設定 'inline-flex' or 'none' */
-  --skip-display: inline-flex;
-  --close-display: inline-flex;
+  --image-display: none;
+  --dice-display: none;
+  --skip-display: none;
+  --close-display: none;
   /* 非表示設定 'flex', 'block' or 'none' */
   --title-display: flex;
   --main-title-display: block;
   --sub-title-display: block;
   --message-display: block;
 }
-
-/* ココフォリア デフォルトの表示 */
-/*
-:root {
-  --image-background: transparent;
-  --image-width: 240px;
-  --image-height: auto;
-  --image-border-width: 0;
-  --image-border-radius: 0;
-  --image-margin: 0;
-}
-*/
 
 /* タイトルの方 */
 .MuiTypography-subtitle2,
@@ -80,7 +56,7 @@
 
 .MuiToolbar-gutters {
   display: var(--title-display);
-  padding: 12px 24px;
+  background-color: none;
 }
 
 /* ログの方 */
@@ -91,20 +67,12 @@
 .MuiToolbar-root+div {
   display: var(--message-display);
   padding: 0px 24px 16px;
-  height: 160px;
+  height: 50px;
 }
 
 /* アイコン */
 .MuiPaper-root>img {
-  display: var(--image-display);
-  width: var(--image-width);
-  height: var(--image-height);
-  margin-bottom: var(--image-margin);
-  background: var(--image-background);
-  border: solid var(--image-border-width) var(--image-border-color);
-  border-radius: var(--image-border-radius);
-  object-fit: cover;
-  object-position: top;
+  display: none;
 }
 
 .MuiPaper-root>img[src=""] {
@@ -117,7 +85,7 @@ div[tabindex="0"]>.MuiPaper-root {
   max-width: var(--balloon-width);
   left: 5px;
   right: 5px;
-  bottom: 20px;
+  bottom: 10px;
   border-radius: var(--balloon-border-radius);
 }
 
@@ -185,4 +153,17 @@ div[tabindex="0"]>.MuiPaper-root {
 /* 閉じるボタン */
 [aria-label="閉じる"] {
   display: var(--close-display);
+}
+
+/* 行間調整 */
+.css-6tsndk {
+  padding: 0px 20px 10px 20px !important;
+}
+.jlKRNh {
+  padding: 0px 20px 10px 20px !important;
+}
+
+/* 影を消す */
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+box-shadow: none !important;
 }
